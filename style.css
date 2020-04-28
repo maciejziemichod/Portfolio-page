@@ -46,7 +46,7 @@ h2 {
 
 /* navbar */
 
-nav {
+#navbar {
   position: fixed;
   width: 100%;
   height: 5rem;
@@ -111,12 +111,11 @@ nav {
 /* welcome section */
 
 #welcome-section {
-  height: 30rem;
-  margin-bottom: 10rem;
+  height: 100vh;
 }
 
 #welcome-section .container {
-  padding-top: 15rem;
+  padding-top: 35vh;
 }
 
 #welcome-section h1 {
@@ -203,20 +202,20 @@ nav {
 
 /* projects section */
 
-#projects-section {
+#projects {
   width: 100%;
 }
 
-#projects-section h2 {
+#projects h2 {
   margin-bottom: 1rem;
 }
 
-#projects-section p {
+#projects p {
   font-size: 1.2rem;
   margin-bottom: 3rem;
 }
 
-.projects {
+.projects-div {
   width: 80vw;
   margin: 2rem auto 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -227,12 +226,12 @@ nav {
   align-items: center;
 }
 
-.project {
+.project-tile {
   height: calc(100% + 2rem);
   border-radius: 1rem;
 }
 
-.project img {
+.project-tile img {
   width: 100%;
   height: 100%;
   border-radius: inherit;
@@ -268,7 +267,7 @@ nav {
   }
 
   .skills,
-  .projects {
+  .projects-div {
     width: 90vw;
   }
 }
