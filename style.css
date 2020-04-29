@@ -80,7 +80,8 @@ h2 {
   width: 7rem;
 }
 
-.nav-panel ul li a {
+.nav-panel ul li a,
+.nav-panel ul li span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,10 +105,119 @@ h2 {
 #nav-contact:hover {
   background-color: var(--main-orange);
   color: var(--main-white);
+  cursor: pointer;
 }
 
-#nav-contact a:hover {
+#nav-contact > span:hover {
   color: var(--main-white);
+}
+
+/* email window */
+
+#email-window-content {
+  width: 40vw;
+  height: 70vh;
+  background-color: var(--main-orange);
+  position: fixed;
+  top: 15vh;
+  left: 30vw;
+  border-radius: 1rem;
+  display: none;
+  opacity: 0;
+}
+
+#email-window {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(27, 25, 34, 0.97);
+  display: none;
+  opacity: 0;
+}
+
+.email-text {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-text h2,
+.email-text p {
+  color: var(--main-white);
+}
+
+.email-text h2 {
+  margin-top: 15%;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.email-text p {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.email-text code {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-white);
+  width: 90%;
+  color: var(--main-pewter);
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 6px 6px rgba(0, 0, 0, 0.16);
+}
+
+#copy-btn:hover {
+  cursor: pointer;
+}
+
+/* thing to make copy button work */
+#text-to-copy {
+  position: absolute;
+  left: -9000px;
+  overflow: hidden;
+}
+
+.close-container {
+  font-size: 2rem;
+  color: var(--main-white);
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+.activate {
+  display: block !important;
+  animation: fade-in 0.8s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.deactivate {
+  animation: fade-out 0.8s ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* welcome section */
@@ -308,6 +418,13 @@ h2 {
   .projects-div {
     width: 90vw;
   }
+
+  #email-window-content {
+    width: 90%;
+    left: 5%;
+    height: 90vh;
+    top: 5vh;
+  }
 }
 
 @media (max-width: 746px) {
@@ -316,6 +433,12 @@ h2 {
       var(--main-orange) 25%,
       var(--main-white) 0%
     );
+  }
+}
+
+@media (max-width: 680px) {
+  #welcome-section .container {
+    padding-top: 30vh;
   }
 }
 
