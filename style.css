@@ -98,6 +98,8 @@ h2 {
   border: solid var(--main-orange) 2px;
   border-radius: 2rem;
   margin-right: 3rem;
+  transition: color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 #nav-contact:hover {
@@ -252,6 +254,8 @@ h2 {
   border: solid var(--main-orange) 2px;
   border-radius: 2rem;
   padding: 0.7rem;
+  transition: color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .orange-btn:hover {
