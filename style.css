@@ -7,14 +7,20 @@
   padding: 0;
 }
 
+:root {
+  --main-orange: rgb(252, 125, 6);
+  --main-white: #fff;
+  --main-pewter: rgb(27, 25, 34);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--main-white);
   font-size: 1rem;
-  color: rgb(27, 25, 34);
+  color: var(--main-pewter);
 }
 
 ul,
@@ -46,7 +52,7 @@ h2 {
   position: fixed;
   width: 100%;
   height: 5rem;
-  background-color: #fff;
+  background-color: var(--main-white);
   display: flex;
   justify-content: space-between;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03), 0 6px 6px rgba(0, 0, 0, 0.07);
@@ -84,23 +90,23 @@ h2 {
 }
 
 .nav-panel ul li a:hover {
-  color: rgb(252, 125, 6);
+  color: var(--main-orange);
 }
 
 #nav-contact {
-  color: rgb(252, 125, 6);
-  border: solid rgb(252, 125, 6) 2px;
+  color: var(--main-orange);
+  border: solid var(--main-orange) 2px;
   border-radius: 2rem;
   margin-right: 3rem;
 }
 
 #nav-contact:hover {
-  background-color: rgb(252, 125, 6);
-  color: #fff;
+  background-color: var(--main-orange);
+  color: var(--main-white);
 }
 
 #nav-contact a:hover {
-  color: #fff;
+  color: var(--main-white);
 }
 
 /* welcome section */
@@ -122,7 +128,7 @@ h2 {
   width: 10rem;
   height: 10rem;
   margin: auto;
-  background-color: rgb(252, 125, 6);
+  background-color: var(--main-orange);
 }
 
 /* about section */
@@ -130,8 +136,11 @@ h2 {
 #about-section {
   width: 100%;
   height: auto;
-  color: #fff;
-  background-image: linear-gradient(rgb(252, 125, 6) 40%, #fff 0%);
+  color: var(--main-white);
+  background-image: linear-gradient(
+    var(--main-orange) 40%,
+    var(--main-white) 0%
+  );
   /* a fix for navbar fixed position scrolling too far, positive padding and negative margin top equal to navbar height*/
   padding: 10rem 5rem 5rem 5rem;
   margin-top: -5rem;
@@ -147,7 +156,7 @@ h2 {
 
 /* skills */
 .skills {
-  background-color: #fff;
+  background-color: var(--main-white);
   width: 80vw;
   margin: 1.5rem auto 4rem auto;
   border-radius: 1rem;
@@ -239,15 +248,15 @@ h2 {
 }
 
 .orange-btn {
-  color: rgb(252, 125, 6);
-  border: solid rgb(252, 125, 6) 2px;
+  color: var(--main-orange);
+  border: solid var(--main-orange) 2px;
   border-radius: 2rem;
   padding: 0.7rem;
 }
 
 .orange-btn:hover {
-  background-color: rgb(252, 125, 6);
-  color: #fff;
+  background-color: var(--main-orange);
+  color: var(--main-white);
 }
 
 /* footer */
@@ -255,8 +264,8 @@ h2 {
 #footer {
   width: 100%;
   height: 10rem;
-  background-color: rgb(252, 125, 6);
-  color: #fff;
+  background-color: var(--main-orange);
+  color: var(--main-white);
   font-size: 2.5rem;
   padding-top: 2rem;
 }
@@ -301,7 +310,10 @@ h2 {
 
 @media (max-width: 746px) {
   #about-section {
-    background-image: linear-gradient(rgb(252, 125, 6) 25%, #fff 0%);
+    background-image: linear-gradient(
+      var(--main-orange) 25%,
+      var(--main-white) 0%
+    );
   }
 }
 
