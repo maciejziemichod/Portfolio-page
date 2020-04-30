@@ -195,6 +195,10 @@ h2 {
   right: 1rem;
 }
 
+.close-container:hover {
+  cursor: pointer;
+}
+
 .activate {
   display: block !important;
   animation: fade-in 0.8s ease-in-out forwards;
