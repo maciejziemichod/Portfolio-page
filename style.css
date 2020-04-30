@@ -20,6 +20,7 @@ html {
 body {
   background-color: var(--main-white);
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--main-pewter);
 }
 
@@ -59,7 +60,7 @@ h2 {
 }
 
 .logo {
-  margin-left: 4rem;
+  margin-left: 2rem;
   height: 5rem;
   width: 5rem;
 }
@@ -78,6 +79,7 @@ h2 {
   margin: 1rem 0;
   height: 2.5rem;
   width: 7rem;
+  font-size: 1rem;
 }
 
 .nav-panel ul li a,
