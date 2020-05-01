@@ -1,9 +1,9 @@
-const contact = document.getElementById("nav-contact");
-const emailWindow = document.getElementById("email-window");
-const emailWindowContent = document.getElementById("email-window-content");
-const closeBtn = document.getElementById("close");
-const copyBtn = document.getElementById("copy-btn");
-const textToCopy = document.getElementById("text-to-copy");
+const contact = document.querySelector("#nav-contact");
+const emailWindow = document.querySelector("#email-window");
+const emailWindowContent = document.querySelector("#email-window-content");
+const closeBtn = document.querySelector("#close");
+const copyBtn = document.querySelector("#copy-btn");
+const textToCopy = document.querySelector("#text-to-copy");
 
 contact.addEventListener("click", () => {
   emailWindow.classList.add("activate");
