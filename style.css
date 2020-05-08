@@ -230,6 +230,7 @@ h2 {
 
 #welcome-section {
   height: 100vh;
+  min-height: 30rem;
 }
 
 #welcome-section .container {
